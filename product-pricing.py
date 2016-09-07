@@ -34,6 +34,34 @@
 #print (robot.price * robot.count * robot.tax + book.price * book.count * book.tax)
 
 #skriv om med klass OCH metod
+# class Product:
+# 	price = 0
+# 	count = 1
+# 	tax = 1
+
+# 	def price_with_tax(self):
+# 		return self.price * self.count * self.tax 
+
+#här har jag lagt  till en metod (med def) vilket är en funktion inuti en klass
+#det metoden gör är att räkna ut priset med skatt för varje produkt. 
+
+# robot = Product()
+# robot.price = 900
+# robot.count = 2
+# robot.tax = 1.25
+
+# book = Product()
+# book.price = 100
+# book.count = 1
+# book.tax = 1.06
+
+#jag måste fortfarande definiera värden för produkterna
+
+
+#print(book.price_with_tax()+robot.price_with_tax())
+#när jag anropar metoder måste jag avsluta med en parentes (ibland tom)
+#det gör jag för att visa att det är ett metodanrop
+
 class Product:
 	price = 0
 	count = 1
@@ -41,6 +69,7 @@ class Product:
 
 	def price_with_tax(self):
 		return self.price * self.count * self.tax 
+
 
 robot = Product()
 robot.price = 900
@@ -51,17 +80,6 @@ book = Product()
 book.price = 100
 book.count = 1
 book.tax = 1.06
-
-#här lägger jag till en metod (med def) vilket är en funktion inuti en klass
-#det metoden gör är att räkna ut priset med skatt för varje produkt. 
-
-
-print(book.price_with_tax()+robot.price_with_tax())
-#när jag anropar metoder måste jag avsluta med en parentes (ibland tom)
-#det gör jag för att visa att det är ett metodanrop
-
-
-
 
 
 
