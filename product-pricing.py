@@ -81,15 +81,30 @@ class Product:
 		return self.price * self.count * self.tax 
 
 
-robot = Product(price=900, count=2, tax=1.25)
-book = Product(price=100, count=1, tax=1.06)
-plasticbag = Product (price=2, count=1, tax=1.25)
+# robot = Product(price=900, count=2, tax=1.25)
+# book = Product(price=100, count=1, tax=1.06)
+# plasticbag = Product (price=2, count=1, tax=1.25)
 
-print (robot.price_with_tax()+book.price_with_tax()+plasticbag.price_with_tax())
+# print (robot.price_with_tax()+book.price_with_tax()+plasticbag.price_with_tax())
 ##när jag anropar metoder måste jag avsluta med en parentes (ibland tom)
 #det gör jag för att visa att det är ett metodanrop
 #print-funktionen säger "skriv ut det som står i parentesen. "
 
+
+#nu skapar jag en lista över mina produkter, i stället för att ha dem på flera rader som 84-86 
+#Listans namn, myproducts, står före likhetstecknet. 
+#listan måste omgärdas av hakparenteser. de olika listade objekten skrivs inom parentes och skiljs åt med kommatecken.
+myproducts = [Product(price=900, count=2, tax=1.25), 
+	Product(price = 100, count = 1, tax=1.06), 
+	Product (price = 2, count=1, tax=1.25)]
+
+
+#för att räkna ut priset med hjälp av listan ersätter jag rad 91 med följande:
+
+total_price = (myproducts[0].price_with_tax() + myproducts[1].price_with_tax() + myproducts[2].price_with_tax())
+#här hämtar jag listobjekt - siffrorna anger vilken produkt det gäller. 
+#viktigt att komma ihåg att det som 
+print (total_price)
 
 
 
